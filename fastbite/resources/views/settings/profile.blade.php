@@ -63,7 +63,7 @@
                         @enderror
                     </div>
 
-                    <button type="submit" class="btn btn-danger">Delete Account</button>
+                    <button disabled type="submit" class="btn btn-danger">Delete Account</button>
                 </form>
             </div>
         </div>

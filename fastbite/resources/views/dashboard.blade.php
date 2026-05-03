@@ -1,10 +1,27 @@
+<?php
+function convertUserType($userType) {
+    switch ($userType) {
+        case 1:
+            return 'Customer';
+        case 2:
+            return 'Cashier';
+        case 3:
+            return 'Cook';
+        case 4:
+            return 'Manager';
+        default:
+            return 'Unknown';
+    }
+}
+?>
+
 @extends('layouts.app')
 
 @section('title', 'Dashboard')
 
 @section('content')
 <h1 class="mb-4">Dashboard</h1>
-<h4 class="mb-4">Welcome, {{ auth()->user()->firstName }} {{ auth()->user()->lastName }} ! {{ auth()->user()->userType }}</h4>
+<h4 class="mb-4">Welcome, {{ auth()->user()->firstName }} {{ auth()->user()->lastName }} ({{ convertUserType(auth()->user()->userType) }}) !</h4>
 
 <div class="row mb-4">
     <div class="col-md-4">
