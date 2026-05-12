@@ -1,10 +1,10 @@
 # Fastbite Project Overview
 
-A fast food ordering system with role-based functionality.
+A fast food ordering system with role-based functionality built with Laravel and Bootstrap.
 
 ## Project Description
 
-Fastbite is a simple fast food ordering platform that allows different user roles to interact with the system in meaningful ways. The system simulates a real-world fast food restaurant environment with customers, cashiers, and kitchen staff.
+Fastbite is a simple fast food ordering platform built with Laravel backend and Bootstrap frontend. It allows different user roles to interact with the system in meaningful ways. The system simulates a real-world fast food restaurant environment with customers, cashiers, and kitchen staff.
 
 ## User Roles
 
