@@ -55,7 +55,19 @@ function convertUserType($userType) {
         <h5 class="card-title mb-0">Main Content</h5>
     </div>
     <div class="card-body">
-        <p>Welcome to the Fastbite dashboard! This is your main content area.</p>
+        <!-- <p>Welcome to the Fastbite dashboard! This is your main content area.</p> -->
+        <div class="row"> 
+        @foreach ($menuItems as $item)
+            <div class="col-md-4 mb-4">
+               <div class="card h-100">
+                    <div class="card-body">     
+                        <h6>{{ $item->itemName }}</h6>
+                        <p>{{ $item->itemDescription }}</p>
+                        <p><strong>Price:</strong> ${{ number_format($item->itemPrice, 2) }}</p>
+                    </div>
+                </div>
+            </div>
+        @endforeach
     </div>
 </div>
 @endsection
